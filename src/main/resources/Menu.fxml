@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="318.0"
+            prefWidth="360.0"
+            xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="MenuController">
+   <children>
+      <Label layoutX="121.0" layoutY="14.0" prefHeight="66.0" prefWidth="118.0" text="Menu">
+         <font>
+            <Font size="45.0" />
+         </font></Label>
+      <Button layoutX="129.0" layoutY="152.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" text="Deposit" />
+      <Button layoutX="129.0" layoutY="203.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" text="Withdraw" />
+      <Label fx:id="username" layoutX="136.0" layoutY="80.0" text="Username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="115.0" text="Balance : ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="balance" layoutX="208.0" layoutY="115.0" text="balance">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="logoutButton"
+              layoutX="146.0"
+              layoutY="264.0"
+              mnemonicParsing="false"
+              onAction="#logoutAction"
+              prefHeight="25.0"
+              prefWidth="70.0"
+              text="Logout" />
+   </children>
+</AnchorPane>
